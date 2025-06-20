@@ -15,11 +15,14 @@ public class Class01ReadEmpleados {
 
             // 3- crear una conexion mediante DRIVERMANAGER
             Connection cn = DriverManager.getConnection(connectionString, "root", "root");
+            // ya estoy conectado a la base de datos ------------------------------------------------------------------------
 
+            
+            
             // 4- consultar sobre la base de datos
             String sql = "select * from EMP";
 
-            // 5- creamos el tipo de statement depemdiendo de la consulta, si tiene parametros o no
+            // 5- creamos el tipo de statement depemdiendo de la consulta, si tiene parametros o no. creamos una nueva query para una 
             Statement st = cn.createStatement();
 
             // 6- como es consulta select necesitamos un ResulSet y el metodo executeQuey
