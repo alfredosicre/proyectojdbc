@@ -20,7 +20,7 @@ public class Class03BuscadorPlantillaFuncion {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String connecString = "jdbc:mysql://localhost:3306/hospital"; 
             Connection cn = DriverManager.getConnection(connecString, "root", "root");
-            //select APELLIDO, FUNCION, SALARIO from PLANTILLA where FUNCION='ENFERMERA'
+        
             String sql = "select APELLIDO, FUNCION, SALARIO from PLANTILLA where FUNCION='" + idFuncionM + "'";
             
             Statement st = cn.createStatement(); // consulta simple
